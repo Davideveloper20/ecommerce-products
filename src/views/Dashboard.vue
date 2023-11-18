@@ -1,7 +1,6 @@
 <template>
   <div>
    
-<!-- Header Component -->
 
 <div class="header">
       <div class="container">
@@ -29,7 +28,6 @@
    </div>
    </div>
 
-    <!-- Featured products -->
     <div class="small-container">
       <br>
       <h2 class="title">Categorias</h2>
@@ -59,7 +57,6 @@
 
 
             
-<!-- Featured products -->
 <div class="small-container">
       <h2 class="title">Lo Más Vendido</h2>
 <div class="row">
@@ -74,13 +71,11 @@
   </div>
 </div>
 </div>
-    <!-- offer -->
     <div class="offer">
       <div class="small-container">        
       </div>
     </div>
     
-    <!-- Footer Component -->
 
     <FooterComponent/>
 
@@ -126,7 +121,6 @@ export default {
         console.log(this.categories);
       })
       .catch((e) => {
-        // Podemos mostrar los errores en la consola
         console.log(e);
       });
 
@@ -138,7 +132,6 @@ export default {
           this.product = response.data.products;
       })
       .catch(e => {
-          // Podemos mostrar los errores en la consola
           console.log(e);
       })
 

@@ -2,9 +2,7 @@
   <div class="home">
     <div class="wrapper fadeInDown">
       <div id="formContent">
-        <!-- Tabs Titles -->
 
-        <!-- Icon -->
         <div class="fadeIn first">
           <img
             src="../assets/backtissiini.png"
@@ -15,7 +13,6 @@
           <h1>TISSINI</h1>
         </div>
 
-        <!-- Login Form -->
         <form v-on:submit.prevent="login">
           <input
             type="text"
@@ -28,7 +25,6 @@
           <input type="submit" class="fadeIn fourth" value="Log In" />
         </form>
 
-        <!-- Remind Passowrd -->
         <div id="formFooter">
           <a class="underlineHover" href="https://tissini.com/"
             >Ir al sitio oficial</a
@@ -40,7 +36,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 import axios from "axios";
 
@@ -64,7 +59,6 @@ export default {
       axios
         .post("https://v3.tissini.app/api/v3/login/client", dataSend)
         .then((response) => {
-          //console.log(response);
 
           if (response.status == 200) {
             let id = this.phone;
@@ -73,7 +67,6 @@ export default {
           }
         })
         .catch((e) => {
-          // Podemos mostrar los errores en la consola
           console.log(e);
         });
     },
@@ -82,7 +75,6 @@ export default {
 </script>
 
 <style scoped>
-/* BASIC */
 
 html {
   background-color: #56baed;
@@ -110,7 +102,6 @@ h2 {
   color: #cccccc;
 }
 
-/* STRUCTURE */
 
 .wrapper {
   display: flex;
@@ -145,7 +136,6 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
-/* TABS */
 
 h2.inactive {
   color: #cccccc;
@@ -156,7 +146,6 @@ h2.active {
   border-bottom: 2px solid #5fbae9;
 }
 
-/* FORM TYPOGRAPHY*/
 
 input[type="button"],
 input[type="submit"],

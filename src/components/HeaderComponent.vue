@@ -12,7 +12,7 @@
       </div>
       <nav>
         <ul id="MenuItems">
-          <li><a href="index.html">Home</a></li>
+          <li><router-link to="/dashboard/7865470213">Home</router-link></li>
           <li><a href="product.html">Products</a></li>
         </ul>
       </nav>

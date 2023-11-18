@@ -1,10 +1,8 @@
 <template>
   <div class="categClass">
-    <!-- Header Component -->
 
     <HeaderComponent />
 
-    <!-- Featured products -->
     <div class="small-container">
       <h2 class="title">{{ product[0].category.name }}</h2>
       <div class="row">
@@ -23,12 +21,10 @@
         </div>
       </div>
     </div>
-    <!-- offer -->
     <div class="offer">
       <div class="small-container"></div>
     </div>
 
-    <!-- Footer component -->
 
     <FooterComponent />
   </div>
@@ -70,7 +66,6 @@ export default {
         console.log(this.product);
       })
       .catch((e) => {
-        // Podemos mostrar los errores en la consola
         console.log(e);
       });
   },
